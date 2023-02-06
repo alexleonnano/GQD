@@ -47,8 +47,8 @@ pb.pltutils.colorbar(label="LDOS")
 
 plt.show()
 
-data = solver.eigenvalues
-a = data.tolist()
-with open('sales.txt', 'w') as fp:
-    fp.write('\n'.join(str(a) for a in a))
-    print('Done')
+#data = solver.eigenvalues
+#a = data.tolist()
+#with open('sales.txt', 'w') as fp:
+#    fp.write('\n'.join(str(a) for a in a))
+#    print('Done')
