@@ -1,3 +1,4 @@
+#Zigzag edged graphene quantum dot
 import pybinding as pb
 import numpy as np
 from pybinding.repository import graphene
@@ -28,9 +29,16 @@ plot1 = plt.figure(1)
 eigenvalues = solver.calc_eigenvalues(map_probability_at = [0, -0.8])
 eigenvalues.plot_heatmap(show_indices = True)
 pb.pltutils.colorbar()
+plt.title('Associated energy levels at site (0, -0.8)')
 
 plot2 = plt.figure(2)
 probability_map = solver.calc_probability(9)
 probability_map.plot()
+
+plot3 = plt.figure(3)
+eigen_2 = solver.calc_eigenvalues(map_probability_at = [0.2, -0.8])
+eigen_2.plot_heatmap(show_indices = True)
+pb.pltutils.colorbar()
+plt.title('Associated energy levels at site (0.2, -0.8)')
 
 plt.show()
