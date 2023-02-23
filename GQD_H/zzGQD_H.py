@@ -1,4 +1,4 @@
-#Hexagonal graphene sheet
+# Armchair-edge graphene quantum dots
 
 import pybinding as pb
 import numpy as np
@@ -13,16 +13,11 @@ plt.rcParams.update({'font.size': 15})
 plt.rcParams.update({'figure.dpi': 100})
 plt.rcParams['axes.prop_cycle'] = cycler.cycler(color='k')
 
-#hexagon = pb.regular_polygon(num_sides=6, radius=1, angle=pi/6)
-#hexagon = pb.regular_polygon(num_sides=6, radius=5, angle=pi/6)
-#hexagon = pb.regular_polygon(num_sides=6, radius=10, angle=pi/6)
-#hexagon = pb.regular_polygon(num_sides=6, radius=15, angle=pi/6)
-#hexagon = pb.regular_polygon(num_sides=6, radius=20, angle=pi/6)
-hexagon = pb.regular_polygon(num_sides=6, radius=1, angle=0)
-#hexagon = pb.regular_polygon(num_sides=6, radius=5, angle=0)
-#hexagon = pb.regular_polygon(num_sides=6, radius=10, angle=0)
-#hexagon = pb.regular_polygon(num_sides=6, radius=15, angle=0)
-#hexagon = pb.regular_polygon(num_sides=6, radius=20, angle=0)
+# hexagon = pb.regular_polygon(num_sides=6, radius=1, angle=0)
+hexagon = pb.regular_polygon(num_sides=6, radius=5, angle=0)
+# hexagon = pb.regular_polygon(num_sides=6, radius=10, angle=0)
+# hexagon = pb.regular_polygon(num_sides=6, radius=15, angle=0)
+# hexagon = pb.regular_polygon(num_sides=6, radius=20, angle=0)
 
 
 model = pb.Model(
